@@ -1,0 +1,67 @@
+{
+  "className": "Secondary",
+  "args": [],
+  "code": "608060405234801561001057600080fd5b5060008054600160a060020a03191633179055610188806100326000396000f30060806040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632348238c8114610050578063c6dbdf6114610080575b600080fd5b34801561005c57600080fd5b5061007e73ffffffffffffffffffffffffffffffffffffffff600435166100be565b005b34801561008c57600080fd5b50610095610140565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff1633146100e257600080fd5b73ffffffffffffffffffffffffffffffffffffffff8116151561010457600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16905600a165627a7a7230582038055233804efb8ccfd1521976d90a2faf19283b5856f44c4860aff5d223a3940029",
+  "runtimeBytecode": "60806040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632348238c8114610050578063c6dbdf6114610080575b600080fd5b34801561005c57600080fd5b5061007e73ffffffffffffffffffffffffffffffffffffffff600435166100be565b005b34801561008c57600080fd5b50610095610140565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff1633146100e257600080fd5b73ffffffffffffffffffffffffffffffffffffffff8116151561010457600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16905600a165627a7a7230582038055233804efb8ccfd1521976d90a2faf19283b5856f44c4860aff5d223a3940029",
+  "realRuntimeBytecode": "60806040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632348238c8114610050578063c6dbdf6114610080575b600080fd5b34801561005c57600080fd5b5061007e73ffffffffffffffffffffffffffffffffffffffff600435166100be565b005b34801561008c57600080fd5b50610095610140565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff1633146100e257600080fd5b73ffffffffffffffffffffffffffffffffffffffff8116151561010457600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16905600a165627a7a7230582038055233804efb8ccfd1521976d90a2faf19283b5856f44c4860aff5d223a3940029",
+  "swarmHash": "38055233804efb8ccfd1521976d90a2faf19283b5856f44c4860aff5d223a394",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "78400",
+      "executionCost": "20421",
+      "totalCost": "98821"
+    },
+    "external": {
+      "primary()": "421",
+      "transferPrimary(address)": "20644"
+    }
+  },
+  "functionHashes": {
+    "primary()": "c6dbdf61",
+    "transferPrimary(address)": "2348238c"
+  },
+  "abiDefinition": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "transferPrimary",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "primary",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "filename": "ownership/Secondary.sol",
+  "gas": "auto",
+  "type": "file",
+  "deploy": true,
+  "_gasLimit": false,
+  "error": false,
+  "realArgs": [],
+  "deployedAddress": "0x178A4d9f5A3AD65350879b927e34c2aA739C6F6e"
+}

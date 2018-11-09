@@ -1,0 +1,153 @@
+{
+  "className": "ConditionalEscrow",
+  "args": [],
+  "code": "",
+  "runtimeBytecode": "",
+  "realRuntimeBytecode": "",
+  "swarmHash": "",
+  "gasEstimates": null,
+  "functionHashes": {
+    "deposit(address)": "f340fa01",
+    "depositsOf(address)": "e3a9db1a",
+    "primary()": "c6dbdf61",
+    "transferPrimary(address)": "2348238c",
+    "withdraw(address)": "51cff8d9",
+    "withdrawalAllowed(address)": "685ca194"
+  },
+  "abiDefinition": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "transferPrimary",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "payee",
+          "type": "address"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "payee",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawalAllowed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "primary",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "payee",
+          "type": "address"
+        }
+      ],
+      "name": "depositsOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "payee",
+          "type": "address"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "payee",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "weiAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposited",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "payee",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "weiAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdrawn",
+      "type": "event"
+    }
+  ],
+  "filename": "payment/ConditionalEscrow.sol",
+  "gas": "auto",
+  "type": "file",
+  "deploy": false,
+  "_gasLimit": false,
+  "error": false
+}
